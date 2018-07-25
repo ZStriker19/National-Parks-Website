@@ -1,6 +1,7 @@
 package com.techelevator.jdbc;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.After;
@@ -60,6 +61,9 @@ public class JdbcWeatherDaoIntegrationTest {
 		
 		Assert.assertNotNull(results);
 		Assert.assertEquals(1, results.size());
+		JdbcWeatherDao weatherDao2 = new JdbcWeatherDao(dataSource);
+		JdbcWeatherDao weatherDao3 = new JdbcWeatherDao(dataSource);
+		
 		
 	}
 	

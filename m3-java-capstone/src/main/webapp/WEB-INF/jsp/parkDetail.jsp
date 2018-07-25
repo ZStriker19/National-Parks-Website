@@ -94,4 +94,3 @@
 
     
 <c:import url="common/footer.jsp"/>
-</html>
